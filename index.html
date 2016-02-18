@@ -86,7 +86,7 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     console.log('facebookUid:' + facebookUid);
-    FB.api('/'+ facebookUid, function(response) {
+    FB.api('/{'+ facebookUid + '}', function(response) {
       console.log(JSON.stringify(response));
     });
     FB.api('/me', function(response) {
